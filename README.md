@@ -1,0 +1,1 @@
+# Alexa skill to access MongoDB
