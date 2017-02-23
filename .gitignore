@@ -1,7 +1,6 @@
 node_modules/
 quiz/
 npm-debug.log
-config.js
 config_hide.js
 
 
