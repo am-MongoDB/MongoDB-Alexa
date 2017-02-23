@@ -1,19 +1,14 @@
-AnswerIntent the answer is {Answer}
-AnswerIntent my answer is {Answer}
-AnswerIntent is it {Answer}
-AnswerIntent {Answer} is my answer
-AnswerIntent {Answer}
+WhereIntent where is andrew
+WhereIntent where is he
+WhereIntent where am i
+WhereIntent where did he last check in
+WhereIntent where did Andrew last check in
+WhereIntent where did i last check in
+WhereIntent last check in
 
-AMAZON.StartOverIntent start game
-AMAZON.StartOverIntent new game
-AMAZON.StartOverIntent start
-AMAZON.StartOverIntent start new game
-
-DontKnowIntent i don't know
-DontKnowIntent don't know
-DontKnowIntent skip
-DontKnowIntent i don't know that
-DontKnowIntent who knows
-DontKnowIntent i don't know this question
-DontKnowIntent i don't know that one
-DontKnowIntent dunno
+CountIntent how many checkins
+CountIntent how many times have I checked in
+CountIntent how many times has Andrew checked in
+CountIntent how many times has he checked in
+CountIntent how many check ins
+CountIntent check in count
