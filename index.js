@@ -97,13 +97,17 @@ var handlers = {
             } else {
                 if (body.success) {
                     var successString = "Andrew last checked in to " + body.venue + " on " + body.date;
+                    var imgURL = body.location.replace("http", "https");
                     _this.emit(':tellWithCard',
                         successString,
                         "Mongo – Where's Andrew",
-                        successString + ". Venue URL: " + body.url + ". Map: " + body.location + ".",
+                        successString + ". Location URL: " + body.url + ". View venue: " + body.location + ".",
                         {   
+                            /*
                             smallImageUrl: "https://lh3.googleusercontent.com/81tvpT59weJbOGWT9jQ8_9RtcGXKCcVv59BU7Wl6PnS7okIgrS4iTCgwWpPQY2FRKw=w300",
-                            largeImageUrl: "https://lh3.googleusercontent.com/81tvpT59weJbOGWT9jQ8_9RtcGXKCcVv59BU7Wl6PnS7okIgrS4iTCgwWpPQY2FRKw=w300"
+                            largeImageUrl: "https://lh3.googleusercontent.com/81tvpT59weJbOGWT9jQ8_9RtcGXKCcVv59BU7Wl6PnS7okIgrS4iTCgwWpPQY2FRKw=w300" */
+                            smallImageUrl: imgURL,
+                            largeImageUrl: imgURL
                         }
                     )
                 } else {
