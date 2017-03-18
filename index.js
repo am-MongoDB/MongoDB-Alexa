@@ -27,14 +27,10 @@ var handlers = {
         }
     )},
     "CountIntent": function () {
-
-        console.log("In CountIntent");
-
         var countURL = config.mongopopAPI + "checkInCount";
         var _this = this;
 
         request({url: countURL, json: true}, function (error, response, body) {
-            console.log("in callback");
             if (error || response.statusCode != 200) {
                 console.log("Failed to count checkins: " + error.message);
                 _this.emit(':tellWithCard',
